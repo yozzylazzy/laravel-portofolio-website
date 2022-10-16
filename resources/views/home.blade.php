@@ -38,7 +38,7 @@
 </style>
 
 <body>
-    <hedear>
+    <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
                 <a class="navbar-brand" href="/"><span class="material-symbols-outlined">
@@ -80,7 +80,7 @@
                 </div>
             </div>
         </nav>
-    </hedear>
+    </header>
     <main>
         <div class="container mt-3">
             <div class="row">
