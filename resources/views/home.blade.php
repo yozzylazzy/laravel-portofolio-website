@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap" rel="stylesheet">
@@ -43,8 +45,12 @@
             <div class="container">
                 <a class="navbar-brand" href="/"><span class="material-symbols-outlined">
                         code
-                    </span><b style="vertical-align: middle; font-size: 1.4em; font-family: 'Gemunu Libre', sans-serif;">YOZZY LAZZY</b></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    </span><b
+                        style="vertical-align: middle; font-size: 1.4em; font-family: 'Gemunu Libre', sans-serif;">YOZZY
+                        LAZZY</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -53,7 +59,8 @@
                             <a class="nav-link active" aria-current="page" href="/">HOME</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 MY PROJECTS
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -93,7 +100,7 @@
                             <h4 class="card-title" style="text-align: center;"><b>YOZZY LAZZY'S FOCUS</b></h4>
                         </div>
                         <div class="card-body">
-                            <h5>Web Programming</h5>       
+                            <h5>Web Programming</h5>
                             <h5>Game Programming</h5>
                             <h5>Mobile Programming</h5>
                             <h5>Machine Learning</h5>
@@ -105,9 +112,48 @@
         </div>
     </main>
     <footer>
-
+        <div class="container-fluid bg-dark text-white p-5 mt-3">
+            <div class="row">
+                <div class="col-4">
+                    <h1 class="navbar-brand" href="/"><span class="material-symbols-outlined">
+                        code
+                    </span><b
+                        style="vertical-align: middle; font-size: 1.4em; font-family: 'Gemunu Libre', sans-serif;">YOZZY
+                        LAZZY</b></h1>
+                </div>
+                <div class="col-4">
+                    <h4 class="card-header bg-dark text-white text-center"><b>CONTACT ME</b></h4>
+                    <p class="card-text"><span class="material-symbols-outlined">
+                        mail
+                        </span> Email :</p>
+                    <p class="card-text"><span class="material-symbols-outlined">
+                        camera
+                        </span> Line :</p>
+                    <p class="card-text"><span class="material-symbols-outlined">
+                        smartphone
+                        </span> Phone :</p>
+                </div>
+                <div class="col-4">
+                    <h4 class="card-header bg-dark text-white text-center"><b>ABOUT ME</b></h4>
+                    <p class="card-text">My Name</p>
+                    <p class="card-text">My Age</p>
+                    <p class="card-text">My Address</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h3 style="text-align: center;
+                    font-family: 'Gemunu Libre', sans-serif">
+                        <a href="/about" style="font-variant: normal; text-decoration: none; color:white"> &copy;
+                            2021 YOZZY LAZZY</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
