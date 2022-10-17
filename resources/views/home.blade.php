@@ -90,9 +90,14 @@
     </header>
     <main>
         <div class="container mt-3">
+            <div class="">
+                <h1 class="text-center">{{ $title }}</h1>
+                <p class="text-center">This is my website, I will share my projects here</p>
+            </div>
             <div class="row">
                 <div class="col-8">
-                    <img src="{{ asset('assets/img/programming.png') }}" alt="programming" class="img-fluid">
+                    <img src="{{ asset('assets/img/programming.png') }}" alt="programming"
+                        class="rounded-circle img-thumbnail">
                 </div>
                 <div class="col-4">
                     <div class="card">
@@ -115,26 +120,29 @@
         <div class="container-fluid bg-dark text-white p-5 mt-3">
             <div class="row">
                 <div class="col-4">
-                    <h1 class="navbar-brand" href="/"><span class="material-symbols-outlined">
-                        code
-                    </span><b
-                        style="vertical-align: middle; font-size: 1.4em; font-family: 'Gemunu Libre', sans-serif;">YOZZY
-                        LAZZY</b></h1>
+                    <h5 class="navbar-brand" href="/" style="margin-top: 15%; text-align: center;"><span
+                            class="material-symbols-outlined">
+                            code
+                        </span><b
+                            style="vertical-align: middle; font-size: 3rem; font-family: 'Gemunu Libre', sans-serif;">YOZZY
+                            LAZZY</b></h5>
                 </div>
                 <div class="col-4">
-                    <h4 class="card-header bg-dark text-white text-center"><b>CONTACT ME</b></h4>
-                    <p class="card-text"><span class="material-symbols-outlined">
-                        mail
-                        </span> Email :</p>
-                    <p class="card-text"><span class="material-symbols-outlined">
-                        camera
-                        </span> Line :</p>
-                    <p class="card-text"><span class="material-symbols-outlined">
-                        smartphone
-                        </span> Phone :</p>
+                    <h5 class="card-header bg-dark text-white text-center"><b>CONTACT ME</b></h5>
+                    @foreach ($contact as $kontak)
+                        <p class="card-text"><span class="material-symbols-outlined">
+                                mail
+                            </span> Email : {{ $kontak['email'] }}</p>
+                        <p class="card-text"><span class="material-symbols-outlined">
+                                camera
+                            </span> Line : {{ $kontak['line'] }}</p>
+                        <p class="card-text"><span class="material-symbols-outlined">
+                                smartphone
+                            </span> Phone :  {{ $kontak['phone'] }}</p>
+                    @endforeach
                 </div>
                 <div class="col-4">
-                    <h4 class="card-header bg-dark text-white text-center"><b>ABOUT ME</b></h4>
+                    <h5 class="card-header bg-dark text-white text-center"><b>ABOUT ME</b></h5>
                     <p class="card-text">My Name</p>
                     <p class="card-text">My Age</p>
                     <p class="card-text">My Address</p>

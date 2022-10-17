@@ -14,11 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $title = Str::upper('yozzylazzy homepage');
+    $contact = [["email" => "yozzylazzy@yahoo.com",
+                "phone" => "087825650174",
+                "line" => "@yosefadrian"]];
+    return view('home')->with('title',$title)->with('contact', $contact);
 });
 
 Route::get('/about', function () {
-    return view('about');
+    return view('about', ['topic' => 'About']);
 });
 
 Route::get('/game', function () {
