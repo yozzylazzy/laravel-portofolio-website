@@ -18,6 +18,12 @@
 </head>
 
 <style>
+    body{
+        background-attachment: fixed;
+        background-image: url("assets/img/pola.png");
+        backdrop-filter: blur(0.3vw);
+        background-repeat: repeat;
+    }
     .material-symbols-outlined {
         font-size: 2em;
         vertical-align: middle;
@@ -35,6 +41,21 @@
     }
 
     .navbar {
+        font-family: 'Gemunu Libre', sans-serif;
+    }
+
+    .head-content {
+        font-family: 'Gemunu Libre', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        text-align: center;
+        font-weight: bold;
+    }
+    .logo-content{
+        margin-top: 1vw;
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 1vw;
         font-family: 'Gemunu Libre', sans-serif;
     }
 </style>
@@ -91,25 +112,54 @@
     <main>
         <div class="container mt-3">
             <div class="">
-                <h1 class="text-center">{{ $title }}</h1>
-                <p class="text-center">This is my website, I will share my projects here</p>
+                <img src="{{ asset('assets/img/prog.png') }}" alt="programming" class="rounded-circle img-thumbnail"
+                    style="width: 25em; height: 24.5em; text-align: center;
+                margin:auto; display:block;">
             </div>
-            <div class="row">
-                <div class="col-8">
-                    <img src="{{ asset('assets/img/programming.png') }}" alt="programming"
-                        class="rounded-circle img-thumbnail">
-                </div>
-                <div class="col-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <h4 class="card-title" style="text-align: center;"><b>YOZZY LAZZY'S FOCUS</b></h4>
+            <div class="mb-3">
+                <h1 class="text-center" style="font-family: 'Gemunu Libre', sans-serif;">{{ $title }}</h1>
+                <p class="text-center" style="font-family: 'Gemunu Libre', sans-serif;">This is my website, I will share
+                    my projects here</p>
+            </div>
+            <div class="mt-3">
+                <div class="row">
+                    <div class="col-4 text-center" style="background-color: black; color:white;">
+                        <div class="head-content">
+                            Who Am I?
                         </div>
-                        <div class="card-body">
-                            <h5>Web Programming</h5>
-                            <h5>Game Programming</h5>
-                            <h5>Mobile Programming</h5>
-                            <h5>Machine Learning</h5>
-                            <h5>Deep Learning</h5>
+                        <div class="main-content">
+                            <div class="logo-content">
+                                <span class="material-symbols-outlined">
+                                    sentiment_very_satisfied
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-4 text-center"style="background-color: white; color:black;">
+                        <div class="head-content">
+                            What Am I Doing?
+                        </div>
+                        <div class="main-content">
+                            <div class="logo-content">
+                                <span class="material-symbols-outlined">
+                                    task
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-4 text-center"style="background-color: black; color:white;">
+                        <div class="head-content">
+                            Why Me?
+                        </div>
+                        <div class="main-content">
+                            <div class="logo-content">
+                                <span class="material-symbols-outlined">
+                                    add_task
+                                </span>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -138,7 +188,7 @@
                             </span> Line : {{ $kontak['line'] }}</p>
                         <p class="card-text"><span class="material-symbols-outlined">
                                 smartphone
-                            </span> Phone :  {{ $kontak['phone'] }}</p>
+                            </span> Phone : {{ $kontak['phone'] }}</p>
                     @endforeach
                 </div>
                 <div class="col-4">
