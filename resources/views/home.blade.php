@@ -21,7 +21,7 @@
     body{
         background-attachment: fixed;
         background-image: url("assets/img/pola.png");
-        backdrop-filter: blur(0.3vw);
+        backdrop-filter: blur(5px);
         background-repeat: repeat;
     }
     .material-symbols-outlined {
