@@ -59,3 +59,7 @@ Route::get('/machinelearning', function () {
 Route::get('/deeplearning', function () {
     return view('research.deeplearning');
 });
+
+Route::fallback(function () {
+    return view('404');
+});
