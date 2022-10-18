@@ -88,22 +88,24 @@
         </div>
         <div class="container mt-3">
 
-            <table class="table table-hover table-outlined">
+            <table class="table table-hover table-outlined"
+            style="vertical-align: middle;
+            ">
                 <thead>
                     <tr class="table-dark text-center">
-                        <th scope="col">Name</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Phone</th>
-                        <th scope="col">Address</th>
+                        <th scope="col">Focus Scope</th>
+                        <th scope="col">Skills</th>
+                        <th scope="col">Project</th>
+                        <th scope="col">Ongoing Project</th>
                     </tr>
                 </thead>
                 <tbody></tbody>
-                    @foreach ($contact as $kontak) 
+                    @foreach ($contact as $about) 
                     <tr class="text-center">
-                        <td>Yozzy Lazzy</td>
-                        <td>{{$kontak['email']}}</td>
-                        <td>{{$kontak['phone']}}</td>
-                        <td>{{$kontak['line']}}</td>
+                        <td>{{$about['bidang']}}</td>
+                        <td>{{$about['kemampuan']}}</td>
+                        <td>{{$about['proyek']}}</td>
+                        <td>{{$about['ongoing']}}</td>
                     </tr>
                     @endforeach
                 </tbody>
