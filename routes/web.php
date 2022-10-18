@@ -22,7 +22,17 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return view('about', ['topic' => 'About']);
+    $title = Str::upper('about yozzylazzy');
+    $contact = [["email" => "yozzylazzy@yahoo.com", 
+    "phone" => "087825650174",
+    "line" => "@yosefadrian"],
+    ["email" => "yozzylazzy@yahoo.com", 
+    "phone" => "087825650174",
+    "line" => "@yosefadrian"],
+    ["email" => "yozzylazzy@yahoo.com", 
+    "phone" => "087825650174",
+    "line" => "@yosefadrian"]];
+    return view('about', compact(['title','contact']));
 });
 
 Route::get('/game', function () {

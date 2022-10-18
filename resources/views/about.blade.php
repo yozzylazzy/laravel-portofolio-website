@@ -31,7 +31,8 @@
         font-family: 'Gemunu Libre', sans-serif;
         vertical-align: middle;
     }
-    .navbar{
+
+    .navbar {
         font-family: 'Gemunu Libre', sans-serif;
     }
 </style>
@@ -79,6 +80,37 @@
         </div>
     </nav>
 
+    <main>
+        <div class="mt-5">
+            <h1 class="text-center" style="font-family: 'Gemunu Libre', sans-serif;">{{ $title }}</h1>
+            <p class="text-center" style="font-family: 'Gemunu Libre', sans-serif;">About
+                Me and My Skills</p>
+        </div>
+        <div class="container mt-3">
+
+            <table class="table table-hover table-outlined">
+                <thead>
+                    <tr class="table-dark text-center">
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Address</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+                    @foreach ($contact as $kontak) 
+                    <tr class="text-center">
+                        <td>Yozzy Lazzy</td>
+                        <td>{{$kontak['email']}}</td>
+                        <td>{{$kontak['phone']}}</td>
+                        <td>{{$kontak['line']}}</td>
+                    </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
