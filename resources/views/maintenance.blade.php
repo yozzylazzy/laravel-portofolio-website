@@ -50,7 +50,7 @@
         <div class="alert-head">
             <div class="container mb-5">
                 <div class="alert_img">
-                    <img src="assets/img/404.png" class="img-fluid" alt="Not Found zzz">
+                    <img src="assets/img/503.gif" class="img-fluid" alt="Not Found zzz">
                 </div>
                 <div class="text-center">
                     <div class="head-no">
@@ -68,7 +68,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="d-grid gap-2">
-                                <a href="/" class="btn btn-dark p-3" style="font-size: 1.5em;">Home</a>
+                                <a href="/" class="btn btn-primary p-3" style="font-size: 1.5em;">Home</a>
                             </div>
                         </div>
                     </div>
