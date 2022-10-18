@@ -47,16 +47,18 @@
     .head-content {
         font-family: 'Gemunu Libre', sans-serif;
         text-transform: uppercase;
-        font-size: 1.5em;
+        font-size: 2em;
         text-align: center;
         font-weight: bold;
     }
     .logo-content{
         margin-top: 1vw;
-        font-size: 3em;
+        font-size: 7em;
         text-align: center;
         margin-bottom: 1vw;
         font-family: 'Gemunu Libre', sans-serif;
+        margin-right: 0.0em;
+        display: block;
     }
 </style>
 
@@ -124,25 +126,25 @@
             <div class="mt-3">
                 <div class="row">
                     <div class="col-4 text-center" style="background-color: black; color:white;">
-                        <div class="head-content">
+                        <div class="head-content mt-3">
                             Who Am I?
                         </div>
                         <div class="main-content">
                             <div class="logo-content">
-                                <span class="material-symbols-outlined">
+                                <span class="material-symbols-outlined" style=" margin-right: 0.0em;">
                                     sentiment_very_satisfied
                                 </span>
                             </div>
 
                         </div>
                     </div>
-                    <div class="col-4 text-center"style="background-color: white; color:black;">
-                        <div class="head-content">
+                    <div class="col-4 text-center"style="background-color: white; color:black;" >
+                        <div class="head-content mt-3" >
                             What Am I Doing?
                         </div>
                         <div class="main-content">
                             <div class="logo-content">
-                                <span class="material-symbols-outlined">
+                                <span class="material-symbols-outlined" style=" margin-right: 0.0em;">
                                     task
                                 </span>
                             </div>
@@ -150,12 +152,12 @@
                         </div>
                     </div>
                     <div class="col-4 text-center"style="background-color: black; color:white;">
-                        <div class="head-content">
+                        <div class="head-content mt-3">
                             Why Me?
                         </div>
                         <div class="main-content">
                             <div class="logo-content">
-                                <span class="material-symbols-outlined">
+                                <span class="material-symbols-outlined" style=" margin-right: 0.0em;">
                                     add_task
                                 </span>
                             </div>
