@@ -41,23 +41,23 @@ Route::get('/about', function () {
 });
 
 Route::get('/game', function () {
-    return view('development.game');
+    return view('maintenance');
 });
 
 Route::get('/web', function () {
-    return view('development.web');
+    return view('maintenance');
 });
 
 Route::get('/mobile', function () {
-    return view('development.mobile');
+    return view('maintenance');
 });
 
 Route::get('/machinelearning', function () {
-    return view('research.machinelearning');
+    return view('maintenance');
 });
 
 Route::get('/deeplearning', function () {
-    return view('research.deeplearning');
+    return view('maintenance');
 });
 
 Route::fallback(function () {
