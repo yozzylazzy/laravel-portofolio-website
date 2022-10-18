@@ -8,11 +8,17 @@
 </head>
 <style>
     body {
-        background-attachment: fixed;
+        background-attachment: local;
         background-image: url("assets/img/pola.png");
         backdrop-filter: blur(8px);
-        background-repeat: repeat;
+        background-repeat: no-repeat;
         font-family: 'Gemunu Libre', sans-serif;
+        background-size: cover;
+    }
+
+    .alert{
+        margin-bottom: 0%;
+        padding-bottom: 5%;
     }
 
     .head-no {
@@ -28,13 +34,14 @@
         color: #000;
         font-family: 'Gemunu Libre', sans-serif;
     }
+
     img {
         vertical-align: text-bottom;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
         display: block;
-        width: 40em;
+        width: 35em;
     }
 </style>
 
